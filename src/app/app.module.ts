@@ -11,6 +11,9 @@ import { SigninModalComponent } from './shared/signin-modal/signin-modal.compone
 import { SigninComponent } from './shared/signin/signin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { SignupComponent } from './shared/signup/signup.component';
+import { ValidateEqualModule } from 'ng-validate-equal';
+import { ResetPasswordComponent } from './shared/reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     HomeComponent,
     FooterComponent,
     SigninModalComponent,
-    SigninComponent
+    SigninComponent,
+    SignupComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    ValidateEqualModule,
     ReactiveFormsModule,
     ModalModule.forRoot(),
     TabsModule.forRoot()
