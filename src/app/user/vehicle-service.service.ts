@@ -12,4 +12,7 @@ export class VehicleServiceService {
   getAllVehicle(){
     return this.httpClient.get<Vehicle[]>(this.url);
   }
+  addVehicle(vehicle:Vehicle){
+    return this.httpClient.post<Vehicle>(this.url,vehicle);
+  }
 }
